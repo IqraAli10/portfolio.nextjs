@@ -2,7 +2,7 @@
 import React from 'react';
 import Footer from '@/components/Footer';
 import { Spotlight } from '@/components/ui/spotlight';
-import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
 import Link from 'next/link';
 
