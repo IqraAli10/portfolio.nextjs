@@ -69,8 +69,8 @@ const About = () => {
           <Image
             src="/dp.jpg"
             alt="Iqra Ali"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             className="rounded-full shadow-lg"
           />
         </motion.div>
