@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { navItems } from "@/Data";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased`}
       >
         {/* {children} */}
         <ThemeProvider
@@ -36,6 +38,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+             <FloatingNav navItems={navItems} />
             {children}
           </ThemeProvider>
       </body>
